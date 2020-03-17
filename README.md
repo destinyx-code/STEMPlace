@@ -1,6 +1,6 @@
 # Pxls
 
-Pxls is a collaborative image editor where you can place up to six pixels at a time, inspired by Reddit's [r/Place][place] experiment.
+Pxls is an open source collaborative image editor where you can place up to six pixels at a time, inspired by Reddit's [r/Place][place] experiment.
 
 **Note:** A Docker image is available at [aneurinprice/docker-pxls.space][docker] and on [Docker Hub][dockerhub].
 
@@ -35,7 +35,7 @@ The output `.jar` is in `target/`.
 3. Copy `resources/reference.conf` to the directory as `pxls.conf`.
 4. Configure `pxls.conf`.
 5. Execute the jar with `java -jar pxls-1.0-SNAPSHOT.jar`
-  
+
 The server will start on port 4567 by default, and will expose a rudimentary console with a few commands (listed in `Commands` below).
 You will need to configure the database for the server to start, see the `Configuring Database` section below.
 
@@ -83,7 +83,7 @@ An example OAuth section could look like this:
 
 ## Configuring host
 You must update the `host` option in your `pxls.conf` otherwise session cookies will not set, making auth impossible. `host` should be your domain (or IP if testing locally) without port.
-    
+
 ## Configuring CAPTCHA
 
 By default, CAPTCHAs are disabled, and need to be configured in the config to work.
